@@ -10,6 +10,25 @@
         <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
 
         <title>Portfolio website complete</title>
+        <style>
+            .read-more-btn {
+                margin-top: 10px;
+                padding: 10px 20px; /* Increased size */
+                background-color: #ADD8E6; /* Light blue */
+                color: #000; /* Darker text for contrast */
+                border: none;
+                border-radius: 25px; /* More rounded */
+                font-size: 16px;
+                font-weight: 500;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+            }
+
+            .read-more-btn:hover {
+                background-color: #87CEFA; /* Slightly darker blue on hover */
+            }
+
+        </style>
     </head>
     <body>
         <!--===== HEADER =====-->
@@ -24,7 +43,9 @@
                         <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
                         <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
                         <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                        <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+                        <li class="nav__item"><a href="#project" class="nav__link">Projects</a></li>
+                        <li class="nav__item"><a href="#internship" class="nav__link">Internships</a></li>
+                        <li class="nav__item"><a href="#achievements" class="nav__link">Achievements</a></li>
                         <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
                     </ul>
                 </div>
@@ -211,31 +232,181 @@
                 </div>
             </section>
 
-            <!--===== WORK =====-->
-            <section class="work section" id="work">
-                <h2 class="section-title">Work</h2>
+            <!--===== Projects =====-->
+            <!-- <section class="work section" id="project">
+                <h2 class="section-title">Projects</h2>
 
                 <div class="work__container bd-grid">
                     <a href="" class="work__img">
                         <img src="assets/img/team1.jpg" alt="">
                     </a>
+                    <p>
                     <a href="" class="work__img">
                         <img src="assets/img/team2.jpg" alt="">
                     </a>
                     <a href="" class="work__img">
                         <img src="assets/img/team3.jpg" alt="">
                     </a>
-                    <!-- <a href="" class="work__img">
-                        <img src="assets/img/work4.jpg" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/work5.jpg" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/work6.jpg" alt="">
-                    </a> -->
+                </div>
+            </section> -->
+            <section class="work section" id="project">
+                <h2 class="section-title">Projects</h2>
+
+                <div class="work__container bd-grid">
+                    <div class="work__item">
+                        <a href="#" class="work__img">
+                            <img src="assets/img/minor.png" alt="">
+                        </a>
+                        <h3 class="project-title">Smart Home Automation</h3>
+                        <button class="read-more-btn" onclick="toggleDescription(this)">Read More</button>
+                        <p class="project-description" style="display: none;">
+                            This project developed a compact, energy-efficient portable air conditioning system using Peltier modules. Designed for small spaces, it achieved effective cooling with low power consumption. Emphasizing sustainability, scalability, and affordability, the system shows promise for personal, medical, or off-grid applications, aligning with modern needs for eco-friendly cooling solutions.
+                        </p>
+                    </div>
+
+                    <div class="work__item">
+                        <a href="#" class="work__img">
+                            <img src="assets/img/team2.jpg" alt="">
+                        </a>
+                        <h3 class="project-title">RAC – AC using Peltier Module</h3>
+                        <button class="read-more-btn" onclick="toggleDescription(this)">Read More</button>
+                        <p class="project-description" style="display: none;">
+                            This project developed a compact, energy-efficient portable air conditioning system using Peltier modules. Designed for small spaces, it achieved effective cooling with low power consumption. Emphasizing sustainability, scalability, and affordability, the system shows promise for personal, medical, or off-grid applications, aligning with modern needs for eco-friendly cooling solutions.
+                        </p>
+                    </div>
+
+                    <div class="work__item">
+                        <a href="#" class="work__img">
+                            <img src="assets/img/team3.jpg" alt="">
+                        </a>
+                        <h3 class="project-title">Blending Cerium Oxide Nanoparticles</h3>
+                        <button class="read-more-btn" onclick="toggleDescription(this)">Read More</button>
+                        <p class="project-description" style="display: none;">
+                            Conducted a study on the impact of Cerium Oxide (CeO2) nanoparticles and ethanol content on engine performance and emissions, developing mathematical models to optimize Friction Power, Indicated Power, Brake Thermal Efficiency, and Brake Power.
+                        </p>
+                    </div>
                 </div>
             </section>
+
+
+            <!--===== Internship =====-->
+            <section class="work section" id="internship">
+                <h2 class="section-title">Internships</h2>
+
+                <!-- <div class="work__container bd-grid">
+                    <div class="work__item">
+                        <a href="#" class="work__img">
+                            <img src="assets/img/team1.jpg" alt="">
+                        </a>
+                        <h3 class="project-title">Tata Motors Limited</h3>
+                        <button class="read-more-btn" onclick="toggleDescription(this)">Read More</button>
+                        <p class="project-description" style="display: none;">
+                            • Identified and resolved discrepancies during BOM compliance audits for Tata Punch MY24, leading to corrective actions and a
+                            3% improvement in overall compliance. <br>
+                            • Developed proficiency in SAP for scheduling, identifying stock gaps, generating stock reports, and other inventory-related tasks.
+                            Additionally, learnt IPMS software and used MS Excel extensively for data analysis. <br>
+                            • Collaborated with SCM buyers to streamline and centralize supplier data. <br>
+                            • Proactively learned the MASOP Debit process and New Product Introduction (NPI), MRP Eligibility and execution of MRP
+                            runs. <br>
+                            • Gained comprehensive understanding of obsolescence management, focusing on inventory aging, obsolescence control, and
+                            developing action plans for disposal of non-moving parts.
+                        </p>
+                    </div>
+
+                    <div class="work__item">
+                        <a href="#" class="work__img">
+                            <img src="assets/img/team2.jpg" alt="">
+                        </a>
+                        <h3 class="project-title">Sigma Consultants India</h3>
+                        <button class="read-more-btn" onclick="toggleDescription(this)">Read More</button>
+                        <p class="project-description" style="display: none;">
+                             • Engaged in the implementation and training of Six Sigma, Total Quality Management (TQM), and Lean methodologies.
+                              <br>  • Conducted in-depth research projects for various MSMEs, focusing on process optimization and efficiency improvements.
+                              <br>  • Performed comprehensive workplace analysis through surveys to identify and address operational challenges.
+                        </p>
+                    </div> -->
+                <!-- </div> -->
+                 <div class="work__container bd-grid" style="display: flex; gap: 30px; flex-wrap: wrap;">
+                <div class="work__item" style="flex: 1; min-width: 300px; max-width: 48%;">
+                    <a href="#" class="work__img">
+                        <img src="assets/img/team1.jpg" alt="">
+                    </a>
+                    <h3 class="project-title">Tata Motors Limited</h3>
+                    <button class="read-more-btn" onclick="toggleDescription(this)">Read More</button>
+                    <p class="project-description" style="display: none;">
+                        • Identified and resolved discrepancies during BOM compliance audits for Tata Punch MY24, leading to corrective actions and a
+                        3% improvement in overall compliance. <br>
+                        • Developed proficiency in SAP for scheduling, identifying stock gaps, generating stock reports, and other inventory-related tasks.
+                        Additionally, learnt IPMS software and used MS Excel extensively for data analysis. <br>
+                        • Collaborated with SCM buyers to streamline and centralize supplier data. <br>
+                        • Proactively learned the MASOP Debit process and New Product Introduction (NPI), MRP Eligibility and execution of MRP
+                        runs. <br>
+                        • Gained comprehensive understanding of obsolescence management, focusing on inventory aging, obsolescence control, and
+                        developing action plans for disposal of non-moving parts.
+                    </p>
+                </div>
+
+                <div class="work__item" style="flex: 1; min-width: 300px; max-width: 48%;">
+                    <a href="#" class="work__img">
+                        <img src="assets/img/team2.jpg" alt="">
+                    </a>
+                    <h3 class="project-title">Sigma Consultants India</h3>
+                    <button class="read-more-btn" onclick="toggleDescription(this)">Read More</button>
+                    <p class="project-description" style="display: none;">
+                        • Engaged in the implementation and training of Six Sigma, Total Quality Management (TQM), and Lean methodologies.
+                        <br>  • Conducted in-depth research projects for various MSMEs, focusing on process optimization and efficiency improvements.
+                        <br>  • Performed comprehensive workplace analysis through surveys to identify and address operational challenges.
+                    </p>
+                </div>
+            </div>
+
+            </section>
+
+            <!--===== Achievemnts =====-->
+            <section class="work section" id="achievements">
+                <h2 class="section-title">Achievements</h2>
+
+                <div class="work__container bd-grid">
+                    <div class="work__item">
+                        <a href="#" class="work__img">
+                            <img src="assets/img/team1.jpg" alt="">
+                        </a>
+                        <h3 class="project-title">m-Baja 22-23</h3>
+                        <button class="read-more-btn" onclick="toggleDescription(this)">Read More</button>
+                        <p class="project-description" style="display: none;">
+                            Go Green: AIR 1, <br>
+                            Design Validation: AIR 3, <br>
+                            Manuverability: AIR 7, <br>
+                            Overall Dynamic: AIR 5, <br>
+                            S&T: AIR 6, and <br>
+                            Overall Rank: AIR 9. <br>
+                        </p>
+                    </div>
+
+                    <div class="work__item">
+                        <a href="#" class="work__img">
+                            <img src="assets/img/team2.jpg" alt="">
+                        </a>
+                        <h3 class="project-title">e-Baja 23-24</h3>
+                        <button class="read-more-btn" onclick="toggleDescription(this)">Read More</button>
+                        <p class="project-description" style="display: none;">
+                             AIR-13 in Design Event <br> AIR-16 in Sales <br> AIR-17 in Cost Even
+                        </p>
+                    </div>
+
+                    <div class="work__item">
+                        <a href="#" class="work__img">
+                            <img src="assets/img/team3.jpg" alt="">
+                        </a>
+                        <h3 class="project-title">Mechanical design Fundamental Eligibility test</h3>
+                        <button class="read-more-btn" onclick="toggleDescription(this)">Read More</button>
+                        <p class="project-description" style="display: none;">
+                            Secured 88.8 %    
+                        </p>
+                    </div>
+                </div>
+            </section>
+
 
             <!--===== CONTACT =====-->
             <section class="contact section" id="contact">
@@ -271,3 +442,12 @@
         <script src="assets/js/main.js"></script>
     </body>
 </html>
+
+<script>
+    function toggleDescription(button) {
+        const desc = button.nextElementSibling;
+        const isVisible = desc.style.display === "block";
+        desc.style.display = isVisible ? "none" : "block";
+        button.textContent = isVisible ? "Read More" : "Read Less";
+    }
+</script>
